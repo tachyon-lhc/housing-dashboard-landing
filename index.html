@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Argentina Housing Dashboard</title>
+
+    <!-- Open Graph para LinkedIn preview -->
+    <meta property="og:title" content="Argentina Housing Dashboard" />
+    <meta
+      property="og:description"
+      content="Interactive real estate analytics with 72,000+ properties. Built with Python, Streamlit, and Plotly."
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/tachyon-lhc/argentina-housing-dashboard/main/dashboard-screenshot.png"
+    />
+    <meta
+      property="og:url"
+      content="https://tachyon-lhc.github.io/housing-dashboard-landing/"
+    />
+
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        text-align: center;
+        background: #f5f5f5;
+      }
+      .container {
+        background: white;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #333;
+        margin-bottom: 10px;
+      }
+      .subtitle {
+        color: #666;
+        font-size: 18px;
+        margin-bottom: 30px;
+      }
+      .btn {
+        display: inline-block;
+        padding: 15px 30px;
+        background: #0066cc;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 18px;
+        margin: 10px;
+        transition: background 0.3s;
+      }
+      .btn:hover {
+        background: #0052a3;
+      }
+      .btn-secondary {
+        background: #333;
+      }
+      .btn-secondary:hover {
+        background: #222;
+      }
+      img {
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 30px 0;
+      }
+      .features {
+        text-align: left;
+        margin: 30px auto;
+        max-width: 600px;
+      }
+      .features h3 {
+        color: #333;
+        margin-top: 30px;
+      }
+      .features ul {
+        line-height: 1.8;
+      }
+      .tech-stack {
+        color: #666;
+        font-size: 16px;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🏠 Argentina Housing Dashboard</h1>
+      <p class="subtitle">
+        Interactive analytics platform analyzing 72,000+ properties from Buenos
+        Aires real estate market
+      </p>
+
+      <img
+        src="https://raw.githubusercontent.com/tachyon-lhc/argentina-housing-dashboard/main/dashboard-screenshot.png"
+        alt="Dashboard Screenshot"
+      />
+
+      <div>
+        <a
+          href="https://argentina-housing-dashboard.streamlit.app/"
+          class="btn"
+        >
+          View Live Dashboard
+        </a>
+
+        <a
+          href="https://github.com/tachyon-lhc/argentina-housing-dashboard"
+          class="btn btn-secondary"
+        >
+          View Code on GitHub
+        </a>
+      </div>
+
+      <div class="features">
+        <h3>Key Features</h3>
+        <ul>
+          <li>72,000+ properties scraped from MercadoLibre</li>
+          <li>5 interactive Plotly visualizations</li>
+          <li>Advanced filtering by zone, city, and price range</li>
+          <li>Real-time data exploration with Streamlit</li>
+          <li>Automated web scraping with incremental updates</li>
+          <li>SQLite database with optimized queries</li>
+        </ul>
+
+        <h3>🛠️ Tech Stack</h3>
+        <p class="tech-stack">
+          Python • Streamlit • Plotly • SQLite • BeautifulSoup • Pandas • Git
+        </p>
+
+        <h3>📊 Data Pipeline</h3>
+        <ul>
+          <li>Web scraping: 42 pages per city across 32 locations</li>
+          <li>Data cleaning: 2% outlier removal, 98% retention</li>
+          <li>Database: Incremental updates, duplicate detection</li>
+          <li>Visualization: Interactive charts and filters</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
